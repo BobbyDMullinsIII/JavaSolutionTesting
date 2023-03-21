@@ -12,7 +12,7 @@ public class Main
 {
     public static void main(String[] args)
     {
-        runProblem8();
+        runProblem14();
     }
 
     //Problem 1
@@ -148,5 +148,53 @@ public class Main
         System.out.println(maxArea);
 
     }//end runProblem11()
+
+    //Problem 12
+    //Method for running IntegertoRoman solution
+    public static void runProblem12()
+    {
+        //Main variables
+        int num = 3;
+        String romanNumeral;
+
+        //Execute Solution
+        romanNumeral = Problem12.IntToRoman(num);
+
+        //Solution printed out to console
+        System.out.println(romanNumeral);
+
+    }//end runProblem12()
+
+    //Problem 13
+    //Method for running RomantoInteger solution
+    public static void runProblem13()
+    {
+        //Main variables
+        String s = "MCMXCIV";
+        int convertInt;
+
+        //Execute Solution
+        convertInt = Problem13.RomanToInt(s);
+
+        //Solution printed out to console
+        System.out.println(convertInt);
+
+    }//end runProblem13()
+
+    //Problem 14
+    //Method for running ContainerWithMostWater solution
+    public static void runProblem14()
+    {
+        //Main variables
+        String[] strs = new String[] { "flower", "flow", "flight" };
+        String commonPrefix;
+
+        //Execute Solution
+        commonPrefix = Problem14.LongestCommonPrefix(strs);
+
+        //Solution printed out to console
+        System.out.println(commonPrefix);
+
+    }//end runProblem14()
 }
 
