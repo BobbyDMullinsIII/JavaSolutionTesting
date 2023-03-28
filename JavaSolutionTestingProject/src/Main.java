@@ -12,7 +12,7 @@ public class Main
 {
     public static void main(String[] args)
     {
-        runProblem14();
+        runProblem3();
     }
 
     //Problem 1

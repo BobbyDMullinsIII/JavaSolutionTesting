@@ -34,7 +34,14 @@ public class Problem3
             //If a repeating character is found, reset checkStr
             if (checkStr.contains(Character.toString(s.charAt(i))) == true)
             {
-                checkStr = Character.toString(checkStr.charAt(checkStr.indexOf(s.charAt(i))));
+                try
+                {
+                    checkStr = Character.toString(checkStr.charAt(checkStr.indexOf(s.charAt(i) + 1)));
+                }
+                catch (Exception e)
+                {
+                    checkStr = Character.toString(checkStr.charAt(checkStr.indexOf(s.charAt(i))));
+                }
             }
 
             //Add currently checked character in string to the checkStr
@@ -49,7 +56,7 @@ public class Problem3
 
         //Return final max substring without repeating characters length
         //(Minus 1 because added one on line 37 crashes program)
-        return substringLength - 1;
+        return substringLength;
 
     }//end lengthOfLongestSubstring()
 }
