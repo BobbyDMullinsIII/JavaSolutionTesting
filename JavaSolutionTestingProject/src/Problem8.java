@@ -35,11 +35,13 @@ public class Problem8
 
             if(!Character.isDigit(s.charAt(1)))
             { return 0; }
-        }
 
-        //If the first character is not a digit, negative sign, or positive sign, return 0
-        if (!Character.isDigit(s.charAt(0)) && s.charAt(pointer) != '-' && s.charAt(pointer) != '+')
-        { return 0; }
+            //If the first character is not a negative sign or positive sign, return 0
+            if(s.charAt(0) != '-' && s.charAt(0) != '+')
+            {
+                return 0;
+            }
+        }
 
         //Increments pointer forward if a plus or negative exists
         if (s.charAt(pointer) == '-' || s.charAt(pointer) == '+')
