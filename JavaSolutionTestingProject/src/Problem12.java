@@ -11,6 +11,22 @@ import java.util.LinkedHashMap;
  */
 public class Problem12
 {
+    //Problem 12
+    //Method for running IntegertoRoman solution
+    public static void runProblem12()
+    {
+        //Main variables
+        int num = 3;
+        String romanNumeral;
+
+        //Execute Solution
+        romanNumeral = Problem12.IntToRoman(num);
+
+        //Solution printed out to console
+        System.out.println(romanNumeral);
+
+    }//end runProblem12()
+
     /**
      * Solution for Integer to Roman problem
      *

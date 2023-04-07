@@ -10,6 +10,23 @@
 import java.util.Arrays;
 public class Problem4
 {
+    //Problem 4
+    //Method for running MedianTwoSortedArrays solution
+    public static void runProblem4()
+    {
+        //Main variables
+        int[] nums1 = new int[] { 1, 3 };
+        int[] nums2 = new int[] { 2 };
+        double median;
+
+        //Execute solution
+        median = Problem4.findMedianSortedArrays(nums1, nums2);
+
+        //Solution printed out to console
+        System.out.println(median);
+
+    }//end runProblem4()
+
     /**
      * Solution for Median of Two Sorted Arrays problem
      *

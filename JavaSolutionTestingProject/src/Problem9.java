@@ -8,6 +8,22 @@
  */
 public class Problem9
 {
+    //Problem 9
+    //Method for running PalindromeNumber solution
+    public static void runProblem9()
+    {
+        //Main variables
+        int x = 121;
+        boolean isPalindrome;
+
+        //Execute solution
+        isPalindrome = Problem9.isPalindrome(x);
+
+        //Solution printed out to console
+        System.out.println(isPalindrome);
+
+    }//end runProblem9()
+
     /**
      * Solution for Palindrome Number problem
      *

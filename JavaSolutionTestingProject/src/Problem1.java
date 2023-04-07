@@ -7,10 +7,29 @@
  * @since       Sunday, March 12, 2023 (2023-03-12)
  */
 
+import java.util.Arrays;
 import java.util.Map;
 import java.util.HashMap;
 public class Problem1
 {
+    //Problem 1
+    //Method for running TwoSum solution
+    public static void runProblem1()
+    {
+        //Main variables
+        int[] nums = new int[] { 2, 7, 11, 15 };
+        int target = 9;
+        int[] returnArray;
+
+        //Execute solution
+        //returnArray = Problem1.twoSumBruteForce(nums, target); //Brute force method
+        returnArray = Problem1.twoSumEfficient(nums, target); //More efficient method
+
+        //Solution printed out to console
+        System.out.println(Arrays.toString(returnArray));
+
+    }//end runProblem1()
+
     /**
      * Brute force solution for TwoSum problem
      *

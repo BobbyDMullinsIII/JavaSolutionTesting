@@ -10,6 +10,22 @@ import java.util.LinkedHashMap;
  */
 public class Problem13
 {
+    //Problem 13
+    //Method for running RomantoInteger solution
+    public static void runProblem13()
+    {
+        //Main variables
+        String s = "MCMXCIV";
+        int convertInt;
+
+        //Execute Solution
+        convertInt = Problem13.RomanToInt(s);
+
+        //Solution printed out to console
+        System.out.println(convertInt);
+
+    }//end runProblem13()
+
     /**
      * Solution for Roman to Integer problem
      *

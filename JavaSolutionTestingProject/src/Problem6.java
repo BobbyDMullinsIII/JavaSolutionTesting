@@ -8,6 +8,23 @@
  */
 public class Problem6
 {
+    //Problem 6
+    //Method for running ZigzagConversion solution
+    public static void runProblem6()
+    {
+        //Main variables
+        String s = "PAYPALISHIRING";
+        int numRows = 3;
+        String converted;
+
+        //Execute solution
+        converted = Problem6.convert(s, numRows);
+
+        //Solution printed out to console
+        System.out.println(converted);
+
+    }//end runProblem6
+
     /**
      * Solution for Zigzag Conversion problem
      *

@@ -8,6 +8,23 @@
  */
 public class Problem11
 {
+    //Problem 11
+    //Method for running ContainerWithMostWater solution
+    public static void runProblem11()
+    {
+        //Main variables
+        int[] height = new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
+        int maxArea;
+
+        //Execute Solution
+        //maxArea = Problem11.maxAreaBruteForce(height); //Brute force method
+        maxArea = Problem11.maxAreaEfficient(height); //More efficient method
+
+        //Solution printed out to console
+        System.out.println(maxArea);
+
+    }//end runProblem11()
+
     /**
      * Brute force solution for Container With Most Water problem
      *

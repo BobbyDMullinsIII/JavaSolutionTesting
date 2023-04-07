@@ -8,6 +8,22 @@
  */
 public class Problem8
 {
+    //Problem 8
+    //Method for running my atoi solution
+    public static void runProblem8()
+    {
+        //Main variables
+        String s = "42";
+        int newInt;
+
+        //Execute solution
+        newInt = Problem8.myAtoi(s);
+
+        //Solution printed out to console
+        System.out.println(newInt);
+
+    }//end runProblem8()
+    
     /**
      * Solution for String To Integer (Atoi) problem
      *

@@ -10,6 +10,22 @@ import java.util.Arrays;
  */
 public class Problem14
 {
+    //Problem 14
+    //Method for running ContainerWithMostWater solution
+    public static void runProblem14()
+    {
+        //Main variables
+        String[] strs = new String[] { "flower", "flow", "flight" };
+        String commonPrefix;
+
+        //Execute Solution
+        commonPrefix = Problem14.LongestCommonPrefix(strs);
+
+        //Solution printed out to console
+        System.out.println(commonPrefix);
+
+    }//end runProblem14()
+
     /**
      * Solution for Longest Common Prefix problem
      *

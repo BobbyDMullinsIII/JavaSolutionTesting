@@ -14,6 +14,23 @@ import java.util.stream.Collectors;
 
 public class Problem7
 {
+    //Problem 7
+    //Method for running MedianTwoSortedArrays solution
+    public static void runProblem7()
+    {
+        //Main variables
+        int x = 123;
+        int reversedNumber;
+
+        //Execute solution
+        //reversedNumber = Problem7.reverseSimple(x); //Simpler solution
+        reversedNumber = Problem7.reverseFasterSmaller(x);//Slightly faster and more space efficient solution
+
+        //Solution printed out to console
+        System.out.println(reversedNumber);
+
+    }//end runProblem7()
+
     /**
      * Simple solution for Reverse Integer problem
      *

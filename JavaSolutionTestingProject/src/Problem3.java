@@ -8,6 +8,22 @@
  */
 public class Problem3
 {
+    //Problem 3
+    //Method for running LongestSubstringWithoutRepeat solution
+    public static void runProblem3()
+    {
+        //Main variables
+        String s = "abcabcbb";
+        int substringLength;
+
+        //Execute solution
+        substringLength = Problem3.lengthOfLongestSubstring(s);
+
+        //Solution printed out to console
+        System.out.println(substringLength);
+
+    }//end runProblem3()
+
     /**
      * Solution for Longest Substring Without Repeating Characters problem
      *
