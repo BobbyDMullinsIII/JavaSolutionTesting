@@ -11,7 +11,7 @@ public class Problem16
 {
     //Problem 16
     //Method for running ThreeSumClosest solution
-    public static void RunProblem16()
+    public static void runProblem16()
     {
         //Main variables
         int[] nums = new int[] { -1, 2, 1, -4 };
@@ -19,20 +19,21 @@ public class Problem16
         int closeSum;
 
         //Execute Solution
-        closeSum = Problem16.ThreeSumClosest(nums, target);
+        closeSum = Problem16.threeSumClosest(nums, target);
 
         //Solution printed out to console
         System.out.print(closeSum);
 
     }//end RunProblem16()
 
-    /// <summary>
-    /// Solution for Three Sum problem
-    /// </summary>
-    /// <param name="nums">array of ints to search for triplets that is closest to 'target'</param>
-    /// <param name="target">value to calculate triplet closest to</param>
-    /// <returns>sum of the triplet that is closest to 'target' from the 'nums' array</returns>
-    public static int ThreeSumClosest(int[] nums, int target)
+    /**
+     * Solution for Three Sum problem
+     *
+     * @param  nums     array of ints to search for triplets that is closest to 'target'
+     * @param  target   value to calculate triplet closest to
+     * @return sum of the triplet that is closest to 'target' from the 'nums' array
+     */
+    public static int threeSumClosest(int[] nums, int target)
     {
         int closestInt = Integer.MAX_VALUE; //Value from a triplet within 'nums' that is closest to 'target'
         int pointer1;                  //First pointer for the closest triplet
